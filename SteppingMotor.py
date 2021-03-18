@@ -15,7 +15,7 @@ GPIO.setup(22, GPIO.OUT)
 
 door_status = False
 
-# as for four phase stepping motor, four steps is a cycle. the function is used to drive the stepping motor clockwise or anticlockwise to take four steps    
+# as for four phase stepping motor, four steps is a cycle. the function is used to drive the stepping motor clockwise or anticlockwise to take four steps.
 def moveOnePeriod(direction,ms):    
     for j in range(0,4,1):      # cycle for power supply order
         for i in range(0,4,1):  # assign to each pin
